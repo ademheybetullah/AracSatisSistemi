@@ -63,63 +63,63 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arac.cs" />
-    <Compile Include="AracSahibi.cs" />
-    <Compile Include="AracSahibiForm.cs">
+    <Compile Include="Concrete\Arac.cs" />
+    <Compile Include="Concrete\AracSahibi.cs" />
+    <Compile Include="Forms\AracSahibiForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AracSahibiForm.Designer.cs">
+    <Compile Include="Forms\AracSahibiForm.Designer.cs">
       <DependentUpon>AracSahibiForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Donanim.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Concrete\Donanim.cs" />
+    <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="IDonanimEkle.cs" />
-    <Compile Include="IGiris.cs" />
-    <Compile Include="IIlanDuzenle.cs" />
-    <Compile Include="IIlanEkle.cs" />
-    <Compile Include="IIlanGoruntule.cs" />
-    <Compile Include="IIlanKarsilastir.cs" />
-    <Compile Include="IIlanOnayla.cs" />
-    <Compile Include="IIlanSil.cs" />
-    <Compile Include="IKayit.cs" />
-    <Compile Include="Ilan.cs" />
-    <Compile Include="IlanFiltrele.cs" />
-    <Compile Include="IYorumEkle.cs" />
-    <Compile Include="Kisi.cs" />
-    <Compile Include="MongoDB.cs" />
-    <Compile Include="Musteri.cs" />
-    <Compile Include="MusteriForm.cs">
+    <Compile Include="Abstract\IDonanimEkle.cs" />
+    <Compile Include="Abstract\IGiris.cs" />
+    <Compile Include="Abstract\IIlanDuzenle.cs" />
+    <Compile Include="Abstract\IIlanEkle.cs" />
+    <Compile Include="Abstract\IIlanGoruntule.cs" />
+    <Compile Include="Abstract\IIlanKarsilastir.cs" />
+    <Compile Include="Abstract\IIlanOnayla.cs" />
+    <Compile Include="Abstract\IIlanSil.cs" />
+    <Compile Include="Abstract\IKayit.cs" />
+    <Compile Include="Concrete\Ilan.cs" />
+    <Compile Include="Abstract\IlanFiltrele.cs" />
+    <Compile Include="Abstract\IYorumEkle.cs" />
+    <Compile Include="Abstract\Kisi.cs" />
+    <Compile Include="Concrete\MongoDB.cs" />
+    <Compile Include="Concrete\Musteri.cs" />
+    <Compile Include="Forms\MusteriForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MusteriForm.Designer.cs">
+    <Compile Include="Forms\MusteriForm.Designer.cs">
       <DependentUpon>MusteriForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MySQL.cs" />
-    <Compile Include="Oracle.cs" />
+    <Compile Include="Concrete\MySQL.cs" />
+    <Compile Include="Concrete\Oracle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VeriTabani.cs" />
-    <Compile Include="Yonetici.cs" />
-    <Compile Include="YoneticiForm.cs">
+    <Compile Include="Abstract\VeriTabani.cs" />
+    <Compile Include="Concrete\Yonetici.cs" />
+    <Compile Include="Forms\YoneticiForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="YoneticiForm.Designer.cs">
+    <Compile Include="Forms\YoneticiForm.Designer.cs">
       <DependentUpon>YoneticiForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Yonetim.cs" />
-    <Compile Include="Yorum.cs" />
-    <EmbeddedResource Include="AracSahibiForm.resx">
+    <Compile Include="Concrete\Yonetim.cs" />
+    <Compile Include="Concrete\Yorum.cs" />
+    <EmbeddedResource Include="Forms\AracSahibiForm.resx">
       <DependentUpon>AracSahibiForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MusteriForm.resx">
+    <EmbeddedResource Include="Forms\MusteriForm.resx">
       <DependentUpon>MusteriForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -131,7 +131,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="YoneticiForm.resx">
+    <EmbeddedResource Include="Forms\YoneticiForm.resx">
       <DependentUpon>YoneticiForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
